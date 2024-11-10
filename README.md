@@ -1,37 +1,31 @@
-# Jarvis - AI Assistant
+# Jarvis - AI Assistant 🤖
 
-Jarvis is a voice-activated AI assistant designed to help users with daily tasks, answer queries, control smart devices, and provide real-time information. It uses natural language processing (NLP) and machine learning to interact intelligently with users.
+Jarvis is an AI-powered voice assistant designed to perform various tasks like browsing the internet, playing music, reading the latest news and interacting with OpenAI GPT models. This project offers users a smart, conversational assistant to streamline daily activities and provide a personalized interaction experience.
 
 ## 🚀 Features
-- **Voice Commands**: Perform tasks through simple voice commands.
-- **Information Retrieval**: Fetch news, weather, and other real-time updates.
-- **Task Automation**: Set reminders, manage to-dos, and send emails.
-- **Smart Home Integration**: Control IoT devices like lights, fans, and more.
-- **Conversational AI**: Natural conversation with context retention.
+- **Voice Activation**: Activate using "Hey Jarvis" and perform various tasks through voice commands.
+- **Web Browsing**: Open popular websites like Google, YouTube, Facebook, and LinkedIn using voice commands.
+- **Music Playback**: Play your favorite tracks directly from YouTube.
+- **News Headlines**: Fetch and read out the latest news updates using the News API.
+- **OpenAI GPT Integration**: Provides AI-generated responses for complex queries using OpenAI's GPT models.
+- **Conversational AI**: Offers a friendly interaction with personalized responses and context retention.
 
 ## 🛠️ Technologies Used
-- **Python**: Backend development and scripting.
+- **Python**: Core language for development.
 - **SpeechRecognition**: For converting speech to text.
-- **OpenAI API**: Leveraging GPT models for NLP.
-- **Django**: Backend framework for web-based interaction.
-- **Raspberry Pi**: Integration for IoT and home automation.
+- **Google Text-to-Speech (gTTS)**: For generating voice responses.
+- **Pygame**: For playing audio files.
+- **OpenAI API**: To generate responses using GPT models.
+- **Web Browser**: For handling URL redirections.
+- **News API**: For fetching the latest news updates.
 
 ## 📂 Project Structure
 ```plaintext
 jarvis-ai-assistant/
-├── README.md
-├── requirements.txt
 ├── src/
 │   ├── main.py
-│   ├── speech_recognition.py
-│   ├── response_generator.py
-│   ├── device_controller.py
-│   └── utils.py
-├── config/
-│   ├── settings.py
-│   └── secrets.json
-├── docs/
-│   └── usage_guide.md
-└── tests/
-    ├── test_speech.py
-    └── test_response.py
+│   ├── musicLibrary.py
+│   ├── newsapi.py
+│   ├── client.py
+├── requirements.txt
+└── README.md
