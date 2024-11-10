@@ -116,4 +116,11 @@ Contributions are welcome! If you'd like to contribute, follow these steps:
    ```bash
    git push origin feature-branch
    ```
-5. Open a pull request. 
+5. Open a pull request.
+
+## 📞 Contact
+For any inquiries, feel free to reach out :
+
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:akhileshbamane26@gmail.com)
+   [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/d-akkya/)
+         [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/d_akkya_007/)
