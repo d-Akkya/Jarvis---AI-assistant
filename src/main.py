@@ -4,8 +4,8 @@ import pyttsx3
 import musicLibrary
 from newsapi import newsapi
 import requests
-# from openai import OpenAI
-# from client import client
+from openai import OpenAI
+from client import client
 from gtts import gTTS
 import pygame
 import os
@@ -37,21 +37,21 @@ def speak(text):
     pygame.mixer.music.unload()
     os.remove("temp.mp3")
 
-# def aiProcess(command):
-#     client = client.api_key()
+def aiProcess(command):
+    client = client.api_key()
 
-#     completion = client.chat.completions.create(
-#         model="gpt-4o",
-#         messages=[
-#             {"role": "system", "content": "You are a helpful assistant."},
-#             {
-#                 "role": "user",
-#                 "content": command
-#             }
-#         ]
-#     )
+    completion = client.chat.completions.create(
+        model="gpt-4o",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {
+                "role": "user",
+                "content": command
+            }
+        ]
+    )
 
-#     return completion.choices[0].message
+    return completion.choices[0].message
 
 
 def processCommand(c):
@@ -91,11 +91,11 @@ def processCommand(c):
     elif "appreciate" in c.lower():
         speak('I\'m here anytime you need assistance, feel free to ask')
 
-    else:
-    #     # Let OpenAI handle the request
-    #     output = aiProcess(c)
-    #     speak(output)
-        speak('Try our premium with chat-gpt')
+    else:        
+        # Let OpenAI handle the request
+        output = aiProcess(c)
+        speak(output)
+        # speak('Try our premium with chat-gpt')
 
 if __name__ == "__main__":
     speak('Initializing Jarvis....')
